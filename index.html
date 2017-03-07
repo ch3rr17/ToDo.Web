@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Gulp Demo</title>
-<!-- bower:css -->
-<!-- endbower -->
+<html lang="en" ng-app="todoApp">
 
-<!-- inject:css -->
-<!-- endinject -->
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoApp</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/main.css">
+    <!-- endinject -->
 </head>
 
 <body>
-<!-- bower:js -->
-<!-- endbower -->
-<h1>HEYA</h1>
-<!-- inject:js -->
-<!-- endinject -->
+    <div ui-view></div>
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <!-- endbower -->
+
+    <!-- inject:js -->
+    <script src="/app/js/app.js"></script>
+    <script src="/app/js/todo.controller.js"></script>
+    <script src="/app/js/todo.factory.js"></script>
+    <!-- endinject -->
 </body>
+
 </html>

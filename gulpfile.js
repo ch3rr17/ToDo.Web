@@ -49,10 +49,10 @@ gulp.task('watch', function() {
 
 gulp.task('injectables', function() {
     var sources = gulp.src(paths, { read: false });
-    return gulp.src('./app/index.html')
+    return gulp.src('index.html')
         .pipe(wiredep())
         .pipe(inject(sources), { relative: true })
-        .pipe(gulp.dest('./app'));
+        .pipe(gulp.dest('.'));
 });
 
 
